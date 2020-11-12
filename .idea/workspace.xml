@@ -2,78 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b68417b9-582f-4720-9037-658142c4c6b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbcConnect.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/TestMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/constant/DBConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/entity/CommonDBImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/entity/Connect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/entity/EsConnectImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/entity/MongodbConnectImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/entity/RedisConnectImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/AntdbFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/DBFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/DBFactoryBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/Db2Factory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/EsFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/GaussdbFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/GbaseFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/MongodbFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/MssqlFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/MysqlFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/OracleFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/PostgreSqlFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/RedisFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/TeradataFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/service/JDBCConnect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/utils/ConfigParseUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/utils/PrintTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/utils/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sw/service/JDBCTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/TestMain.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/constant/DBConstant.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/entity/CommonDBImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/entity/Connect.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/entity/EsConnectImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/entity/MongodbConnectImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/entity/RedisConnectImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/AntdbFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/DBFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/DBFactoryBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/Db2Factory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/EsFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/GaussdbFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/GbaseFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/MongodbFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/MssqlFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/MysqlFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/OracleFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/PostgreSqlFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/RedisFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/TeradataFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/service/JDBCConnect.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/utils/ConfigParseUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/utils/PrintTable$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/utils/PrintTable$Table.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/utils/PrintTable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/utils/StringUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.sw.service.JDBCTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.sw.service.JDBCTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/sw/service/JDBCTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -115,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+            <state relative-caret-position="250">
+              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -133,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+            <state relative-caret-position="150">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -178,11 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="109" column="62" lean-forward="true" selection-start-line="109" selection-start-column="62" selection-end-line="109" selection-end-column="62" />
+            <state relative-caret-position="128">
+              <caret line="109" column="62" selection-start-line="109" selection-start-column="62" selection-end-line="109" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -276,10 +206,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sw/utils/StringUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sw/utils/ConfigParseUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sw/utils/PrintTable.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/README.MD" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -343,6 +273,43 @@
               <item name="jdbcConnect" type="b2602c69:ProjectViewProjectNode" />
               <item name="jdbcConnect" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdbcConnect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbcConnect" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdbcConnect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbcConnect" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdbcConnect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbcConnect" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdbcConnect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbcConnect" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sw" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdbcConnect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbcConnect" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jdbcConnect" type="b2602c69:ProjectViewProjectNode" />
@@ -486,12 +453,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604999231176</updated>
-      <workItem from="1604999232531" duration="98511000" />
+      <workItem from="1604999232531" duration="99593000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98511000" />
+    <option name="totallyTimeSpent" value="99593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -502,16 +469,16 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.498503" visible="true" weight="0.25" />
-      <window_info id="Structure" order="6" sideWeight="0.50149703" side_tool="true" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.4976415" visible="true" weight="0.25" />
+      <window_info id="Structure" order="6" sideWeight="0.5023585" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.27548808" />
+      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.54013014" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.6273023" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.62689805" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.40520042" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
@@ -907,6 +874,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="350">
+            <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="109" column="62" selection-start-line="109" selection-start-column="62" selection-end-line="109" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/utils/PrintTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2874">
@@ -927,32 +911,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        <state relative-caret-position="250">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="350">
-            <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="109" column="62" lean-forward="true" selection-start-line="109" selection-start-column="62" selection-end-line="109" selection-end-column="62" />
+        <state relative-caret-position="150">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>

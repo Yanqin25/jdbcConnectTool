@@ -3,7 +3,7 @@
 # 使用方法
 1. 在jar包同级目录的db.properties中配置待测试的数据库连接信息。
 2. 在cmd中执行命令格式如下：
-java -jar YQJdbcConnect-1.0.jar [type]  
+java -jar YJdbcConnect-1.0.jar [type]  
 --type：可选参数，指定测试的数据库种类，如果不指定则在配置文件中读取  
 # 输出效果
 java -jar YQJdbcConnect.jar mysql  
