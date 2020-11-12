@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b68417b9-582f-4720-9037-658142c4c6b8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbcConnect.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/TestMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/constant/DBConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/entity/CommonDBImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/entity/Connect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/entity/EsConnectImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/entity/MongodbConnectImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/entity/RedisConnectImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/AntdbFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/DBFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/DBFactoryBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/Db2Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/EsFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/GaussdbFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/GbaseFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/MongodbFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/MssqlFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/MysqlFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/OracleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/PostgreSqlFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/RedisFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/factory/TeradataFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/service/JDBCConnect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/utils/ConfigParseUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/utils/PrintTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sw/utils/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sw/service/JDBCTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/TestMain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/constant/DBConstant.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/entity/CommonDBImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/entity/Connect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/entity/EsConnectImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/entity/MongodbConnectImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/entity/RedisConnectImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/AntdbFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/DBFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/DBFactoryBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/Db2Factory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/EsFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/GaussdbFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/GbaseFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/MongodbFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/MssqlFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/MysqlFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/OracleFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/PostgreSqlFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/RedisFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/factory/TeradataFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/service/JDBCConnect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/utils/ConfigParseUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/utils/PrintTable$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/utils/PrintTable$Table.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/utils/PrintTable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/sw/utils/StringUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.sw.service.JDBCTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.sw.service.JDBCTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/sw/service/JDBCTest.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/utils/PrintTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2874">
+              <caret line="145" column="11" selection-start-line="145" selection-start-column="11" selection-end-line="145" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#425#426#0" expanded="true" />
+                <element signature="e#3708#3709#0" expanded="true" />
+                <element signature="e#3754#3755#0" expanded="true" />
+                <element signature="e#2658#2659#0" expanded="true" />
+                <element signature="e#2703#2704#0" expanded="true" />
+                <element signature="e#4817#4818#0" expanded="true" />
+                <element signature="e#4869#4870#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.MD">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="350">
+                <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/utils/StringUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="108" column="14" selection-end-line="117" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/utils/ConfigParseUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="447">
+              <caret line="24" column="33" selection-end-line="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/entity/Connect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="109" column="62" lean-forward="true" selection-start-line="109" selection-start-column="62" selection-end-line="109" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/entity/CommonDBImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/TestMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Arquillian JUnit Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>slf4j</find>
+      <find>org.slf4j.impl</find>
+      <find>index</find>
+      <find>10</find>
+      <find>maxLen</find>
+      <find>maxWidth</find>
+      <find>ConfigParseUtil</find>
+      <find>ibm</find>
+      <find>lombo</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/resources/db.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/factory/DbFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/config/ConfigParse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/constant/DbConstant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/entity/DataBaseFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/factory/DataBaseFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/factory/DBFactoryBuilder.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/sw/service/JDBCConnectTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/sw/service/JDBCTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/entity/Mysql.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/service/DBConnect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/service/CommonDBConnect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/factory/MysqlFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/entity/DataBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/factory/OracleFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/factory/AntdbFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/factory/Db2Factory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/factory/MssqlFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/factory/TeradataFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/factory/PostgreSqlFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/factory/GaussdbFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/factory/GbaseFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/utils/StringUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/factory/DBFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/entity/EsConnectImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/factory/EsFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/factory/RedisFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/entity/RedisConnectImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/factory/MongodbFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/constant/DBConstant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/entity/MongodbConnectImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/JDBCTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/TestMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/service/JDBCConnect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/entity/Connect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/utils/StringUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/utils/ConfigParseUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sw/utils/PrintTable.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
+        <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/README.MD" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="YQJdbcConnect" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="YQJdbcConnect" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="YQJdbcConnect" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="YQJdbcConnect" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="1920" />
+    <option name="height" value="1060" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <showMembers ProjectPane="true" />
+      <abbreviatePackageNames ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="jdbcConnect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbcConnect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdbcConnect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbcConnect" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdbcConnect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbcConnect" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/sw/entity" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.sw.service" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sw" />
+      <recent name="com.sw.factory" />
+      <recent name="com.sw.entity" />
+      <recent name="com.sw.constant" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\yangqin\coding\sw\jdbcConnect\src\main\java\com\sw\entity" />
+      <recent name="D:\yangqin\coding\sw\jdbcConnect\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.TestMain">
+    <configuration name="ConfigParseUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sw.utils.ConfigParseUtil" />
+      <module name="jdbcConnect" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sw.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBCTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sw.service.JDBCTest" />
+      <module name="jdbcConnect" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sw.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrintTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sw.utils.PrintTable" />
+      <module name="jdbcConnect" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sw.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sw.utils.StringUtils" />
+      <module name="jdbcConnect" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sw.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sw.TestMain" />
+      <module name="jdbcConnect" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestMain" />
+        <item itemvalue="Application.StringUtils" />
+        <item itemvalue="Application.PrintTable" />
+        <item itemvalue="Application.JDBCTest" />
+        <item itemvalue="Application.ConfigParseUtil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b68417b9-582f-4720-9037-658142c4c6b8" name="Default Changelist" comment="" />
+      <created>1604999231176</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604999231176</updated>
+      <workItem from="1604999232531" duration="98511000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="98511000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.498503" visible="true" weight="0.25" />
+      <window_info id="Structure" order="6" sideWeight="0.50149703" side_tool="true" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.27548808" />
+      <window_info anchor="bottom" id="Database Changes" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.6273023" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.40520042" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="Theme Preview" order="0" />
+      <window_info anchor="right" id="Database" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32995737" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/sw/service/JDBCTest.java</url>
+          <line>7</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sw/utils/PrintTable.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="cellTotalLen" language="JAVA" />
+        <watch expression="padString.length()" language="JAVA" />
+        <watch expression="colSize.get(j)" language="JAVA" />
+        <watch expression="formatList.get(1).get(10)" language="JAVA" />
+        <watch expression="formatList.get(19).get(10)" language="JAVA" />
+        <watch expression="formatTable.getContent().stream().reduce(Integer::sum).get()" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>formatTable.getContent().stream().reduce(Integer::sum).get()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>maxWidthList.stream().reduce(Integer::sum).get()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>formatList.get(1).get(10)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>formatList.get(4).get(1)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>formatList.get(19).get(10)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>formatList.get(4).get(10)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>formatList.get(19).get(5)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>formatList.get(4).get(5)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>formatList.get(19).get(16)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>formatList.get(8).get(16)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/factory/DataBaseFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/sw/service/JDBCConnectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/entity/Mysql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/service/CommonDBConnectImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/factory/OracleFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/factory/DBFactoryBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/factory/MssqlFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/factory/TeradataFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/factory/PostgreSqlFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/factory/GaussdbFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/factory/GbaseFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/factory/AntdbFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/factory/DBFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/factory/EsFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/factory/RedisFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="74" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/entity/EsConnectImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/entity/RedisConnectImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/factory/MongodbFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/entity/MongodbConnectImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="59" column="50" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/constant/DBConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/com.sw:jdbcConnect:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>com.sw:jdbcConnect:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">com.sw:jdbcConnect:1.0-SNAPSHOT</node>
+            <node x="" y="">redis.clients:jedis:jar:3.3.0</node>
+            <node x="" y="">redis.clients:jedis:jar:3.3.0/org.slf4j:slf4j-api:jar:1.7.30</node>
+            <node x="" y="">org.slf4j:slf4j-simple:jar:1.7.25</node>
+            <node x="" y="">org.slf4j:slf4j-simple:jar:1.7.25/org.slf4j:slf4j-api:jar:1.7.25</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.5513673318551368" x="451.0" y="449.7660857908847" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Show Conflicts/Duplicates</Category>
+          </Categories>
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk8/src.zip!/java/util/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="967" column="18" selection-start-line="967" selection-start-column="18" selection-end-line="967" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/factory/MysqlFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/sw/service/JDBCTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/factory/Db2Factory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk8/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="110" column="20" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/service/JDBCConnect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar!/lombok/Data.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/entity/CommonDBImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/TestMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/entity/Connect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/utils/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="108" column="14" selection-end-line="117" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/utils/ConfigParseUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="24" column="33" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sw/utils/PrintTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2874">
+          <caret line="145" column="11" selection-start-line="145" selection-start-column="11" selection-end-line="145" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#3708#3709#0" expanded="true" />
+            <element signature="e#3754#3755#0" expanded="true" />
+            <element signature="e#2658#2659#0" expanded="true" />
+            <element signature="e#2703#2704#0" expanded="true" />
+            <element signature="e#4817#4818#0" expanded="true" />
+            <element signature="e#4869#4870#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="350">
+            <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="109" column="62" lean-forward="true" selection-start-line="109" selection-start-column="62" selection-end-line="109" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>jdbcConnect</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

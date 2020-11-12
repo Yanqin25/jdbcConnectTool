@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="0" failures="0" name="com.sw.service.JDBCTest" time="0" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="12.0.2+10"/>
+    <property name="sun.boot.library.path" value="D:\jdk12\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\yangqin\coding\sw\jdbcConnect"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\yangqin\coding\sw\jdbcConnect"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="12.0.2+10"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\SW\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\maven\apache-maven-3.6.1\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\jdk12\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\xftp\;D:\Eziriz\IntelliLock;D:\Eziriz\.NET Reactor;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\tool\bin;C:\Program Files\Git\cmd;D:\nodejs\;D:\anaconda\condabin;D:\jdk12\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\maven\apache-maven-3.6.1\bin;D:\tesseract;D:\yangqin\apache-jmeter-5.1.1\bin;D:\yangqin\apache-ant-1.10.7\bin;D:\Graphviz2.38\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\MSBuild\14.0\Bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\git-tf-2.0.3;D:\Android-tool-win\Android\Sdk\platform-tools;C:\Program Files\Git\usr\bin;C:\Users\SW\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\SW\AppData\Local\Programs\Python\Python37-32\;C:\Users\SW\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\SW\AppData\Roaming\npm;D:\Fiddler;C:\Users\SW\AppData\Local\Microsoft\WindowsApps;C:\Users\SW\.dotnet\tools;D:\yangqin\app\Android-tool-win\Android\Sdk\platform-tools;D:\Docker Toolbox;."/>
+    <property name="maven.conf" value="D:\maven\apache-maven-3.6.1\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="56.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="D:\maven\apache-maven-3.6.1\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\SW"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.specification.version" value="12"/>
+    <property name="user.name" value="SW"/>
+    <property name="java.class.path" value="D:\maven\apache-maven-3.6.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="12"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher assembly:assembly"/>
+    <property name="java.home" value="D:\jdk12"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="12.0.2"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="ms936"/>
+    <property name="maven.home" value="D:\maven\apache-maven-3.6.1\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2019-07-16"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.stdout.encoding" value="ms936"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+</testsuite>
