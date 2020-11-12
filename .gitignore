@@ -1,10 +1,7 @@
 HELP.md
-!target/*.jar
-test-output/
+/target/
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**
-!**/src/test/**
-
+/*/target/
 ### STS ###
 .apt_generated
 .classpath
@@ -26,13 +23,7 @@ test-output/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
+/build/
 
 ### VS Code ###
 .vscode/
-
-### office ###
-~*.xlsx
-~*.docx
-~*.xls
-~*.doc
