@@ -10,6 +10,7 @@ public class StringUtils {
 
     /**
      * 判断字符串是否为空
+     *
      * @param str
      * @return
      */
@@ -19,6 +20,7 @@ public class StringUtils {
 
     /**
      * 将content按照正则匹配，返回可以匹配的字符串列表
+     *
      * @param reg
      * @param content
      * @return
@@ -35,7 +37,8 @@ public class StringUtils {
 
 
     /**
-     *将str重复count次，返回结果
+     * 将str重复count次，返回结果
+     *
      * @param str
      * @param count
      * @return
@@ -48,6 +51,7 @@ public class StringUtils {
 
     /**
      * 将字符串填充到指定长度并居中对齐
+     *
      * @param str
      * @param len
      * @return
@@ -62,25 +66,26 @@ public class StringUtils {
             res.append(fix).append(str).append(fix);
             if (res.length() > len) {
                 return res.substring(0, len);
-            }else{
+            } else {
                 res.append(getRepeatChar(" ", len - res.length()));
                 return res.toString();
             }
         }
-        return str.substring(0,len);
+        return str.substring(0, len);
     }
 
     /**
      * 此方法主要为表格的单元格数据按照指定长度填充并居中对齐并带上分割符号
-     * @param str 原始字符串
-     * @param len 输出字符串的总长度
+     *
+     * @param str    原始字符串
+     * @param len    输出字符串的总长度
      * @param symbol 分割符号
-     * @param index 传入的cell在list的索引，如果为第一个则需要在前面增加分割符号
+     * @param index  传入的cell在list的索引，如果为第一个则需要在前面增加分割符号
      * @return
      */
-    public static String getPadString(String str, Integer len, String symbol, int[] index) {
+    public static String getPadString(String str, Integer len, String symbol, int index) {
         String origin = str + "  ";
-        if (index.length != 0 && index[0] == 0) {
+        if (index == 0) {
             String tmp = getPadString(origin, len - 2);
             return symbol + tmp + symbol;
         } else {
@@ -92,6 +97,7 @@ public class StringUtils {
 
     /**
      * 得到一个字符串中单字节出现的次数
+     *
      * @param cell
      * @return
      */
@@ -99,12 +105,29 @@ public class StringUtils {
         if (cell == null) {
             return 0;
         }
-        String reg = "[^\\x00-\\xff]";
+        String reg = "[^\t\\x00-\\xff]";
+//        String reg = "|[^\t\\x00-\\xff]";
         return cell.replaceAll(reg, "").length();
     }
 
     /**
+     * 得到制表符长度，每个\t显示四个长度
+     *
+     * @param cell
+     * @return
+     */
+    public static Integer getTableCount(String cell) {
+        if (cell == null) {
+            return 0;
+        }
+        String reg = "\t";
+//        String reg = "|[^\t\\x00-\\xff]";
+        return cell.length() - cell.replaceAll(reg, "").length();
+    }
+
+    /**
      * 得到一个字符串中双字节出现的次数
+     *
      * @param cell
      * @return
      */
@@ -113,5 +136,15 @@ public class StringUtils {
             return 0;
         }
         return cell.length() - getENCharCount(cell);
+    }
+
+    public static void main(String[] args) {
+        String test = "ab\t哈哈嘻嘻";
+        String reg = "[^\t\\x00-\\xff]";
+        System.out.println(test.replaceAll(reg, "").length());
+        test.replaceAll("\t|[^\\x00-\\xff]", "");
+        System.out.println(test.length());
+        System.out.println(StringUtils.getZHCharCount(test));
+        System.out.println(StringUtils.getENCharCount(test));
     }
 }

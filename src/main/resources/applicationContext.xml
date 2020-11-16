@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="mysql" class="com.sw.entity.DefaultConnectImpl">
+        <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://192.168.10.120:3306/sdrp"/>
+        <property name="username" value="root"/>
+        <property name="password" value="siweicn@123"/>
+        <property name="sql" value="SELECT version() FROM dual;"/>
+    </bean>
+    <bean id="oracle" class="com.sw.entity.DefaultConnectImpl">
+        <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@192.168.18.241:1521:orcl"/>
+        <property name="username" value="GUEST"/>
+        <property name="password" value="qaz1#WSX"/>
+        <property name="sql" value="select * from v$version"/>
+    </bean>
+    <bean id="antdb" class="com.sw.entity.DefaultConnectImpl">
+        <property name="driver" value="org.postgresql.Driver"/>
+        <property name="url" value="jdbc:postgresql://192.168.15.199:4332/postgres"/>
+        <property name="username" value="adb"/>
+        <property name="password" value="siwei123$"/>
+        <property name="sql" value="select version()"/>
+    </bean>
+    <bean id="db2" class="com.sw.entity.DefaultConnectImpl">
+        <property name="driver" value="com.ibm.db2.jcc.DB2Driver"/>
+        <property name="url" value="jdbc:db2://192.168.10.199:50000/autotest"/>
+        <property name="username" value="db2inst1"/>
+        <property name="password" value="db2root-pwd"/>
+        <property name="sql" value="select SERVICE_LEVEL FROM SYSIBMADM.ENV_INST_INFO"/>
+    </bean>
+    <bean id="mssql" class="com.sw.entity.DefaultConnectImpl">
+        <property name="driver" value="net.sourceforge.jtds.jdbc.Driver"/>
+        <property name="url" value="jdbc:jtds:sqlserver://192.168.10.199:1433"/>
+        <property name="username" value="sa"/>
+        <property name="password" value="siweicn"/>
+        <property name="sql" value="select @@version"/>
+    </bean>
+    <bean id="teradata" class="com.sw.entity.DefaultConnectImpl">
+        <property name="driver" value="com.teradata.jdbc.TeraDriver"/>
+        <property name="url" value="jdbc:teradata://192.168.18.23/DATABASE=demo,DBS_PORT=1025"/>
+        <property name="username" value="dbc"/>
+        <property name="password" value="dbc"/>
+        <property name="sql" value="select * from dbc.dbcinfo"/>
+    </bean>
+
+    <bean id="postgresql" class="com.sw.entity.DefaultConnectImpl">
+        <property name="driver" value="org.postgresql.Driver"/>
+        <property name="url" value="jdbc:postgresql://192.168.15.199:5432/autotest"/>
+        <property name="username" value="postgres"/>
+        <property name="password" value="siweicn123"/>
+        <property name="sql" value="select version()"/>
+    </bean>
+
+    <bean id="gaussdb" class="com.sw.entity.DefaultConnectImpl">
+        <property name="driver" value="org.postgresql.Driver"/>
+        <property name="url" value="jdbc:postgresql://192.168.15.199:7432/postgres"/>
+        <property name="username" value="siwei"/>
+        <property name="password" value="siwei123$"/>
+        <property name="sql" value="select version()"/>
+    </bean>
+    <bean id="gbase" class="com.sw.entity.DefaultConnectImpl">
+        <property name="driver" value="com.gbase.jdbc.Driver"/>
+        <property name="url" value="jdbc:gbase://192.168.18.106:5258/gbase"/>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+        <property name="sql" value="show variables like 'version'"/>
+    </bean>
+    <bean id="es" class="com.sw.entity.EsConnectImpl">
+        <property name="host" value="192.168.18.124"/>
+        <property name="port" value="9200"/>
+        <property name="username" value="admin"/>
+        <property name="password" value="admin"/>
+        <property name="sql" value="/"/>
+    </bean>
+    <bean id="redis" class="com.sw.entity.RedisConnectImpl">
+        <property name="host" value="192.168.10.113"/>
+        <property name="port" value="6379"/>
+        <property name="password" value="siweicn@123"/>
+        <property name="sql" value="redis_version.*"/>
+    </bean>
+    <bean id="mongodb" class="com.sw.entity.MongodbConnectImpl">
+        <property name="host" value="192.168.10.113"/>
+        <property name="port" value="27017"/>
+        <property name="username" value="root"/>
+        <property name="password" value="siweicn123$"/>
+        <property name="database" value="sdrpfile"/>
+        <property name="authDatabase" value="admin"/>
+        <property name="sql" value="buildinfo|version"/>
+    </bean>
+</beans>

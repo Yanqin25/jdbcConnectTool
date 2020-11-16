@@ -11,33 +11,46 @@ import java.util.stream.Collectors;
 @Data
 public class PrintTable {
 
+    private Table table;
+    private Integer maxWidth;
+    private Integer maxLength;
+
+    public PrintTable(List<List<String>> content, Integer maxWidth, Integer maxLength) {
+        this.table = buildTable(content);
+        this.maxLength = maxLength;
+        this.maxWidth = maxWidth;
+    }
+
+    public PrintTable(List<List<String>> content) {
+        this.table = buildTable(content);
+        this.maxLength = 10;
+        this.maxWidth = 40;
+    }
+
     /**
      * 创建Table实例
      *
      * @param content
      * @return
      */
-    public Table buildTable(List<List<String>> content) {
+
+    private Table buildTable(List<List<String>> content) {
         return new Table(content);
     }
 
     /**
      * 打印表格
-     *
-     * @param table
      */
-    public void printTable(Table table) {
-        //从配置文件读取最大列宽、最大数据量
-        int maxWidth = Integer.parseInt(ConfigParseUtil.get("maxWidth"));
-        int maxCount = Integer.valueOf(ConfigParseUtil.get("maxCount")) + 1;
+    public void printTable(String... symbols) {
+        String symbol = symbols.length == 0 ? "|" : symbols[0];
         //按照最大列宽、最大数据量过滤后的表格
-        Table limitTable = getLimitTable(table, maxWidth, maxCount);
+        Table limitTable = getLimitTable();
         //设置表格的最大宽度：得到每列宽度，再求和
         List<Integer> originMaxWidthList = getMaxWidthLenList(limitTable);
         limitTable.setMaxWidthList(originMaxWidthList);
 
         //得到格式化后的表格数据
-        Table formatTable = getFormatTable(limitTable, "|");
+        Table formatTable = getFormatTable(limitTable, symbol);
         Integer totalColSize = formatTable.getTotalColSize();
         //打印首行分割符号
         System.out.println(StringUtils.getRepeatChar("-", totalColSize));
@@ -54,7 +67,6 @@ public class PrintTable {
     /**
      * 格式化表格
      *
-     * @param table  待格式化的table
      * @param symbol 定义每列间隔符号
      * @return
      */
@@ -76,7 +88,7 @@ public class PrintTable {
                         //如果是首行，还需要再前面加一个分割符号|，故长度加1
                         cellSize = j == 0 ? cellSize + 1 : cellSize;
                         //返回原始字符串按照指定symbol填充到指定长度cellSize，并居中对齐的字符
-                        return StringUtils.getPadString(cell, cellSize, symbol, new int[]{j});
+                        return StringUtils.getPadString(cell, cellSize, symbol, j);
                     }).collect(Collectors.toList());
                 }
         ).collect(Collectors.toList());
@@ -89,15 +101,13 @@ public class PrintTable {
     }
 
     /**
-     * @param table    原始表格
-     * @param maxWidth 最大列宽
-     * @param maxCount 最大条数
      * @return
      */
-    private Table getLimitTable(Table table, int maxWidth, int maxCount) {
+    private Table getLimitTable() {
         List<List<String>> limitContent = table.getContent().stream()
-                .limit(maxCount)
+                .limit(maxLength)
                 .map(row -> row.stream()
+                        .map(cell -> cell == null ? null : cell.replaceAll("\t", " "))
                         .map(cell -> cell != null && cell.length() > maxWidth ? cell.substring(0, maxWidth) : cell)
                         .collect(Collectors.toList())
                 ).collect(Collectors.toList());

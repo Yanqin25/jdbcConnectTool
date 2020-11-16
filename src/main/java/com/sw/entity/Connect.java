@@ -34,7 +34,13 @@ public interface Connect {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        PrintTable pt = new PrintTable();
-        pt.printTable(pt.buildTable(resultList));
+//        PrintTable pt = new PrintTable();
+//        pt.printTable(pt.buildTable(resultList));
+
+//        int width = Integer.valueOf(ConfigParseUtil.get("maxWidth"));
+//        int maxLen = Integer.valueOf(ConfigParseUtil.get("maxCount"));;
+//        new PrintTable(resultList, width, maxLen).printTable("|");
+
+        new PrintTable(resultList).printTable();
     }
 }

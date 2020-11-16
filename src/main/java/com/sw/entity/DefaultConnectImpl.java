@@ -5,7 +5,7 @@ import lombok.Data;
 import java.sql.*;
 
 @Data
-public class CommonDBImpl implements Connect {
+public class DefaultConnectImpl implements Connect {
     private String driver;
     private String username;
     private String password;
