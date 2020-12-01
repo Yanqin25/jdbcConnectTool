@@ -16,4 +16,5 @@ java -jar YQJdbcConnect.jar redis
 ![redis输出结果](https://github.com/Yanqin25/imgServer/blob/master/jdbcConnect/redis.png?raw=true)
 # 版本变更历史
 1. v1.0：基础实现；支持mysql、oracle、antdb、mssql、teradata、postgresql、gaussdb、gbase、es、redis、mongodb    
-1. v1.0.1：使用spring改写（原来的工厂模式->>利用spring的IOC和DI实现）;修复sql结果中含有制表符时显示错位的情况，增强封装，简化printTable的调用方式        
+2. v1.0.1：使用spring改写（原来的工厂模式->>利用spring的IOC和DI实现）;修复sql结果中含有制表符时显示错位的情况，增强封装，简化printTable的调用方式
+3. v1.0.2: 增加批量创建表及插入数据的功能；接入sybase，informix，vertica能力；数据库版本信息可以直接从Connection对象获取，不必手工写sql        

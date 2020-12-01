@@ -111,6 +111,24 @@
             <artifactId>spring-expression</artifactId>
             <version>5.2.9.RELEASE</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.ibm.informix/jdbc -->
+        <dependency>
+            <groupId>com.ibm.informix</groupId>
+            <artifactId>jdbc</artifactId>
+            <version>4.50.3</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.vertica/vjdbc9 -->
+        <dependency>
+            <groupId>com.sw.vertica</groupId>
+            <artifactId>vertica</artifactId>
+            <version>9.2.0</version>
+        </dependency>
+
+
+
+
     </dependencies>
     <build>
         <plugins>
@@ -123,6 +141,9 @@
                         <manifest>
                             <mainClass>com.sw.TestMain</mainClass>
                         </manifest>
+                        <manifestEntries>
+                            <Class-Path>lib/*.jar</Class-Path>
+                        </manifestEntries>
                     </archive>
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>

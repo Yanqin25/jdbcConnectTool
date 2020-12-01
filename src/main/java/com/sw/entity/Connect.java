@@ -1,5 +1,6 @@
 package com.sw.entity;
 
+import com.sw.utils.ConfigParseUtil;
 import com.sw.utils.PrintTable;
 
 import java.sql.ResultSet;
@@ -37,10 +38,9 @@ public interface Connect {
 //        PrintTable pt = new PrintTable();
 //        pt.printTable(pt.buildTable(resultList));
 
-//        int width = Integer.valueOf(ConfigParseUtil.get("maxWidth"));
-//        int maxLen = Integer.valueOf(ConfigParseUtil.get("maxCount"));;
-//        new PrintTable(resultList, width, maxLen).printTable("|");
+        int width = Integer.valueOf(ConfigParseUtil.get("maxWidth"));
+        int maxLen = Integer.valueOf(ConfigParseUtil.get("maxCount"));;
 
-        new PrintTable(resultList).printTable();
+        new PrintTable(resultList,width,maxLen).printTable();
     }
 }

@@ -4,10 +4,18 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="mysql" class="com.sw.entity.DefaultConnectImpl">
         <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://192.168.10.120:3306/sdrp"/>
+        <property name="url" value="jdbc:mysql://192.168.10.113:3306/performanceTest"/>
         <property name="username" value="root"/>
         <property name="password" value="siweicn@123"/>
+        <!--是否执行指定sql，不配置则不执行-->
+        <property name="executeSql" value="false"/>
         <property name="sql" value="SELECT version() FROM dual;"/>
+        <!-- 是否批量创建插入表，不配置则不执行-->
+        <property name="createTable" value="false"/>
+        <property name="ddl" value="create table if not exists `${table}`(id int auto_increment key,name varchar(32),nation varchar(32),birthDay date,sex varchar(32), company varchar(32), school varchar(32), phone varchar(32), idcard varchar(32), email varchar(32),ip varchar(32), mac varchar(32), province varchar(32), city varchar(32),longitude varchar(32),latitude varchar(32),carNO varchar(32),bankid varchar(32),officer varchar(32),imei varchar(32),imsi varchar(32),passowrd varchar(32),addr varchar(32),jobs varchar(32),os varchar(32),industry varchar(32),driveLicense varchar(32),roam_type varchar(32),toll_type varchar(32),SVCTYPE_ID varchar(32),CALL_DURATION varchar(32),BASECALL_FEE varchar(32),user_no varchar(32),esn varchar(32),akey varchar(32),apn varchar(32),major varchar(32),education varchar(32),type varchar(32),fight int)"/>
+        <property name="addSql" value="INSERT INTO `${table}` (`name`, `nation`, `birthDay`, `sex`, `company`, `school`, `phone`, `idcard`, `email`, `ip`, `mac`, `province`, `city`, `longitude`, `latitude`, `carNO`, `bankid`, `officer`, `imei`, `imsi`, `passowrd`, `addr`, `jobs`, `os`, `industry`, `driveLicense`, `roam_type`, `toll_type`, `SVCTYPE_ID`, `CALL_DURATION`, `BASECALL_FEE`, `user_no`, `esn`, `akey`, `apn`, `major`, `education`, `type`, `fight`) VALUES ('孙尚香', ' 壮族', '2020-12-09', ' 女', ' 吴国食品有限公司', ' 厦门大学', '13699489568', '511322199512243356', '845128@qq.com', '192.168.10.113', 'a2:cb:44:e8:cc:90', '四川省', '成都市', '29.062506', '118.183266', '京A88888', '6227894568254567896', '政字第85694563号', '35698499684591', '460208569456128', 'smile.11', '桃园村', '屠夫', 'iphone', '军工', '818564879542', '1', '2', '8564', '599', '20', '85642', '80a587s6', '85a659s12s84dg6w', 'cmnet', '武将', '初阶', '战士', 99)"/>
+        <!-- 批量创建表数量-->
+        <property name="tableCount" value="10"/>
     </bean>
     <bean id="oracle" class="com.sw.entity.DefaultConnectImpl">
         <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
@@ -67,6 +75,42 @@
         <property name="password" value="root"/>
         <property name="sql" value="show variables like 'version'"/>
     </bean>
+
+    <bean id="sybase" class="com.sw.entity.DefaultConnectImpl">
+        <property name="driver" value="net.sourceforge.jtds.jdbc.Driver"/>
+        <property name="url" value="jdbc:jtds:sybase://192.168.10.113:5555/TestDb"/>
+        <property name="username" value="sa"/>
+        <property name="password" value="password"/>
+        <property name="sql" value="select @@cis_version"/>
+        <property name="ddl" value="create table [${table}](id int identity constraint t${table}_pk primary key,name varchar(32),nation varchar(32),birthDay date,sex varchar(32), company varchar(32), school varchar(32), phone varchar(32), idcard varchar(32), email varchar(32),ip varchar(32), mac varchar(32), province varchar(32), city varchar(32),longitude varchar(32),latitude varchar(32),carNO varchar(32),bankid varchar(32),officer varchar(32),imei varchar(32),imsi varchar(32),passowrd varchar(32),addr varchar(32),jobs varchar(32),os varchar(32),industry varchar(32),driveLicense varchar(32),roam_type varchar(32),toll_type varchar(32),SVCTYPE_ID varchar(32),CALL_DURATION varchar(32),BASECALL_FEE varchar(32),user_no varchar(32),esn varchar(32),akey varchar(32),apn varchar(32),major varchar(32),education varchar(32),type varchar(32),fight int)"/>
+        <property name="addSql" value="INSERT INTO [${table}] ([name], [nation], [birthDay], [sex], [company], [school], [phone], [idcard], [email], [ip], [mac], [province], [city], [longitude], [latitude], [carNO], [bankid], [officer], [imei], [imsi], [passowrd], [addr], [jobs], [os], [industry], [driveLicense], [roam_type], [toll_type], [SVCTYPE_ID], [CALL_DURATION], [BASECALL_FEE], [user_no], [esn], [akey], [apn], [major], [education], [type], [fight]) VALUES ('孙尚香', ' 壮族', '2020-12-22', ' 女', ' 吴国食品有限公司', ' 厦门大学', '13699489568', '511322199512243356', '845128@qq.com', '192.168.10.113', 'a2:cb:44:e8:cc:90', '四川省', '成都市', '29.062506', '118.183266', '京A88888', '6227894568254567896', '政字第85694563号', '35698499684591', '460208569456128', 'smile.11', '桃园村', '屠夫', 'iphone', '军工', '818564879542', '1', '2', '8564', '599', '20', '85642', '80a587s6', '85a659s12s84dg6w', 'cmnet', '武将', '初阶', '战士', 99)"/>
+        <property name="tableCount" value="10"/>
+    </bean>
+
+    <bean id="informix" class="com.sw.entity.DefaultConnectImpl">
+        <property name="driver" value="com.informix.jdbc.IfxDriver"/>
+        <property name="url" value="jdbc:informix-sqli://192.168.15.199:9088/testdb:INFORMIXSERVER=informix"/>
+        <property name="username" value="informix"/>
+        <property name="password" value="in4mix"/>
+        <property name="executeSql" value="false"/>
+        <property name="sql" value="SELECT version() FROM dual;"/>
+        <property name="createTable" value="true"/>
+        <property name="ddl" value="create table  my_${table}  (id INTEGER not null,name char(32),nation char(32),birthDay date,sex char(32), company char(32), school char(32), phone char(32), idcard char(32), email char(32),ip char(32), mac char(32), province char(32), city char(32),longitude char(32),latitude char(32),carNO char(32),bankid char(32),officer char(32),imei char(32),imsi char(32),passowrd char(32),addr char(32),jobs char(32),os char(32),industry char(32),driveLicense char(32),roam_type char(32),toll_type char(32),SVCTYPE_ID char(32),CALL_DURATION char(32),BASECALL_FEE char(32),user_no char(32),esn char(32),akey char(32),apn char(32),major char(32),education char(32),type char(32),fight int)"/>
+        <property name="addSql" value="INSERT INTO testdb:informix.my_${table} (id,name,nation,birthday,sex,company,school,phone,idcard,email,ip,mac,province,city,longitude,latitude,carno,bankid,officer,imei,imsi,passowrd,addr,jobs,os,industry,drivelicense,roam_type,toll_type,svctype_id,call_duration,basecall_fee,user_no,esn,akey,apn,major,education,type,fight)VALUES(1,'shunshangxiang','han','2020-11-12','f','wuguo','shamen','13699495395','511322199412253378','740479865@qq.com','192.168.10.113','a2:cb:44:e8:cc:90','sc','cd','118.183266','28.183266','JA88888','6227894568254567896','ZZD85694563H','35698499684591','460208569456128','smile.11','cd','fighter','mac','junshi','818564879542','1','2','2','599','20','85624','80a587s6','85a659s12s84dg6w','cmnet','junior','fight','2',99)"/>
+        <property name="tableCount" value="1"/>
+    </bean>
+    <bean id="vertica" class="com.sw.entity.DefaultConnectImpl">
+        <property name="driver" value="com.vertica.jdbc.Driver"/>
+        <property name="url" value="jdbc:vertica://192.168.10.113:5433/docker"/>
+        <property name="username" value="dbadmin"/>
+        <property name="password" value=""/>
+        <property name="sql" value="select version()"/>
+        <property name="createTable" value="true"/>
+        <property name="ddl" value="create table &quot;test_db&quot;.&quot;${table}&quot; (id int not null constraint t${table}_pk primary key,name varchar(32),nation varchar(32),birthDay date,sex varchar(32), company varchar(32), school varchar(32), phone varchar(32), idcard varchar(32), email varchar(32),ip varchar(32), mac varchar(32), province varchar(32), city varchar(32),longitude varchar(32),latitude varchar(32),carNO varchar(32),bankid varchar(32),officer varchar(32),imei varchar(32),imsi varchar(32),passowrd varchar(32),addr varchar(32),jobs varchar(32),os varchar(32),industry varchar(32),driveLicense varchar(32),roam_type varchar(32),toll_type varchar(32),SVCTYPE_ID varchar(32),CALL_DURATION varchar(32),BASECALL_FEE varchar(32),user_no varchar(32),esn varchar(32),akey varchar(32),apn varchar(32),major varchar(32),education varchar(32),type varchar(32),fight int)"/>
+        <property name="addSql" value="INSERT INTO &quot;test_db&quot;.&quot;${table}&quot; VALUES (1,'孙尚香', ' 壮族', '2020-12-22', ' 女', ' 吴国食品有限公司', ' 厦门大学', '13699489568', '511322199512243356', '845128@qq.com', '192.168.10.113', 'a2:cb:44:e8:cc:90', '四川省', '成都市', '29.062506', '118.183266', '京A88888', '6227894568254567896', '政字第85694563号', '35698499684591', '460208569456128', 'smile.11', '桃园村', '屠夫', 'iphone', '军工', '818564879542', '1', '2', '8564', '599', '20', '85642', '80a587s6', '85a659s12s84dg6w', 'cmnet', '武将', '初阶', '战士', 99)"/>
+        <property name="tableCount" value="10"/>
+    </bean>
+
     <bean id="es" class="com.sw.entity.EsConnectImpl">
         <property name="host" value="192.168.18.124"/>
         <property name="port" value="9200"/>
@@ -88,5 +132,22 @@
         <property name="database" value="sdrpfile"/>
         <property name="authDatabase" value="admin"/>
         <property name="sql" value="buildinfo|version"/>
+    </bean>
+
+    <bean id="hiveMetaStore" class="com.sw.entity.DefaultConnectImpl">
+        <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://192.168.10.120:3306/hive"/>
+        <property name="username" value="hive"/>
+        <property name="password" value="Siweicn@123"/>
+        <property name="sql" value="SELECT * FROM hive.VERSION"/>
+    </bean>
+
+
+    <bean id="hive" class="com.sw.entity.DefaultConnectImpl">
+        <property name="driver" value="org.apache.hive.jdbc.HiveDriver"/>
+        <property name="url" value="jdbc:hive2://192.168.10.120:10000/default"/>
+        <property name="username" value="hive"/>
+        <property name="password" value="Siweicn@123"/>
+        <property name="sql" value="show databases"/>
     </bean>
 </beans>
