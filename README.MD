@@ -9,10 +9,10 @@
 3. 连接测试：java -jar YJdbcConnect-1.0.jar [type]  
 --type：可选参数，指定测试的数据库种类，不指定则在配置文件中读取  
 # 输出效果
-java -jar YQJdbcConnect.jar mysql  
+java -jar YJdbcConnect.jar mysql  
 ![mysql输出结果](https://github.com/Yanqin25/imgServer/blob/master/jdbcConnect/mysql.png?raw=true)
 
-java -jar YQJdbcConnect.jar redis  
+java -jar YJdbcConnect.jar redis  
 ![redis输出结果](https://github.com/Yanqin25/imgServer/blob/master/jdbcConnect/redis.png?raw=true)
 # 版本变更历史
 1. v1.0：基础实现；支持mysql、oracle、antdb、mssql、teradata、postgresql、gaussdb、gbase、es、redis、mongodb    
